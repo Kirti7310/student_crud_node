@@ -1,4 +1,6 @@
-dent Management CRUD (Create, Read, Update, Delete) web application built using Node.js, Express.js, MySQL, and EJS (Embedded JavaScript Templates). It also features user authentication using JWT and Tailwind CSS for styling.
+Student Management CRUD (Create, Read, Update, Delete) web application built using Node.js, Express.js, MySQL, and EJS (Embedded JavaScript Templates). 
+
+It also features user authentication using JWT and Tailwind CSS for styling.
 
 Features
 
