@@ -1,0 +1,23 @@
+<table>
+  <% students.forEach(student => { %>
+    <tr>
+      <td><%= student.name %></td>
+      <td><%= student.age %></td>
+      <td>
+        <form action="/students/update/<%= student.id %>" method="POST">
+          <input type="text" name="name" value="<%= student.name %>" required>
+          <input type="number" name="age" value="<%= student.age %>" required>
+          <button type="submit">Update</button>
+        </form>
+        <form action="/students/delete/<%= student.id %>" method="POST">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+  <% }) %>
+</table>
+<form action="/students/add" method="POST">
+  <input type="text" name="name" required>
+  <input type="number" name="age" required>
+  <button type="submit">Add Student</button>
+</form>
